@@ -1,298 +1,175 @@
-/*=========================================================
- DARK ROMANCE AO3 SITE SKIN
-=========================================================*/
+/* AO3 Dark Romance Skin
+Replace YOUR_GITHUB_BACKGROUND_URL with your GitHub image URL.
+*/
 
-body {
-    background:
-        linear-gradient(rgba(10,0,0,.85), rgba(0,0,0,.90)),
-        url("https://fmont07.github.io/ao3skintest/background.png");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    color: #d4d4d4;
-    font-family: Georgia, serif;
+html,body{
+background:#050505 url("https://fmont07.github.io/ao3skintest/background.png") top center fixed no-repeat;
+background-size:cover;
+color:#f0ece8;
+font-family:"Lucida Bright", Georgia, serif;
 }
 
-/* HEADER */
-
-#header {
-    background: rgba(15,0,0,.92);
-    border-bottom: 3px solid #750000;
-    box-shadow: 0 0 30px #450000;
+body,#outer,#inner,#main,#dashboard,#header,#footer{
+background-color:transparent;
 }
 
-/* TOP ROSES */
-
-#header::before{
-    content:"";
-    display:block;
-    height:80px;
-    background:url("YOUR_ROSES_IMAGE");
-    background-repeat:repeat-x;
-    background-size:auto 80px;
+#header{
+background:rgba(5,5,5,.82);
+border-bottom:1px solid rgba(120,20,20,.35);
 }
 
-/* FOOTER */
-
-#footer{
-    background:rgba(15,0,0,.92);
-    border-top:3px solid #750000;
+#header a,#greeting,#greeting a,.user,.user a{
+color:#f3f3f3!important;
+text-decoration:none;
 }
 
-#footer::after{
-    content:"";
-    display:block;
-    height:80px;
-    background:url("https://fmont07.github.io/ao3skintest/background.png");
-    background-repeat:repeat-x;
-    background-size:auto 80px;
+#header a:hover,#greeting a:hover,.user a:hover{
+color:#ff8f8f!important;
 }
 
-/* MAIN BOXES */
+#main{
+background:rgba(5,5,5,.18);
+border:1px solid rgba(90,90,90,.22);
+padding:1em;
+}
 
-.wrapper,
-.region,
+#dashboard,
+.listbox,
+.group,
+.module,
+.preface,
+.meta,
 fieldset,
+.filters,
 .work,
 .blurb,
 .bookmark,
 .comment,
-.preface,
-.userstuff,
-.meta,
-.dashboard,
-#main{
-
-    background:rgba(20,0,0,.72);
-
-    border:1px solid #640000;
-
-    border-radius:8px;
-
-    box-shadow:0 0 15px rgba(255,0,0,.15);
+#workskin .preface,
+#workskin .chapter,
+#workskin .summary,
+#workskin .notes{
+background:rgba(5,5,5,.25)!important;
+border:1px solid rgba(95,95,95,.25)!important;
+box-shadow:0 0 10px rgba(0,0,0,.35);
 }
 
-/* LINKS */
+p,li,dd,dt,td,th,blockquote,.userstuff{
+color:#f0ece8!important;
+line-height:1.75;
+}
 
-a{
+h1,h2,h3,h4,.heading,.title{
+font-family:"Lucida Bright",Georgia,serif;
+color:#d45b5b!important;
+font-weight:normal;
+}
 
-    color:#d12626;
-
+a,a:visited,.tag,.tags a,.required-tags a,.relationships a,.characters a,.freeforms a,.fandom a{
+color:#e07070!important;
 }
 
 a:hover{
-
-    color:#ff5b5b;
-
-    text-shadow:0 0 6px red;
-
+color:#ffaaaa!important;
 }
 
-/* BUTTONS */
+.stats,.datetime,.language,.words,.chapters,.comments,.bookmarks,.hits,.kudos{
+color:#ddd!important;
+}
 
-input,
 button,
-.actions a{
-
-    background:#2b0000;
-
-    color:#ddd;
-
-    border:1px solid #850000;
-
+input[type=submit],
+input[type=button],
+.actions a,
+.actions li a{
+background:rgba(45,0,0,.78)!important;
+color:#fff!important;
+border:1px solid rgba(120,20,20,.45)!important;
 }
 
-input:hover,
 button:hover,
+input[type=submit]:hover,
 .actions a:hover{
-
-    background:#6d0000;
-
+background:rgba(95,0,0,.88)!important;
 }
 
-/* TITLES */
-
-h1,h2,h3,h4{
-
-    color:#d22;
-
-    text-shadow:0 0 8px #600;
-
+input[type=text],
+input[type=search],
+textarea,
+select{
+background:rgba(20,20,20,.9)!important;
+color:#fff!important;
+border:1px solid rgba(90,90,90,.35)!important;
 }
 
-/* SKULLS */
-
-#main::before{
-
-    content:"";
-
-    position:fixed;
-
-    top:20px;
-
-    left:20px;
-
-    width:180px;
-
-    height:180px;
-
-    background:url("https://fmont07.github.io/ao3skintest/skull.png");
-
-    background-size:contain;
-
-    background-repeat:no-repeat;
-
-    opacity:.16;
-
-    pointer-events:none;
-
+#dashboard,#dashboard *{
+color:#f2f2f2!important;
 }
 
-#main::after{
-
-    content:"";
-
-    position:fixed;
-
-    bottom:20px;
-
-    right:20px;
-
-    width:180px;
-
-    height:180px;
-
-    background:url("https://fmont07.github.io/ao3skintest/skull.png");
-
-    background-size:contain;
-
-    background-repeat:no-repeat;
-
-    opacity:.16;
-
-    pointer-events:none;
-
+.notice,.flash,.error{
+background:rgba(45,0,0,.75)!important;
+color:#fff!important;
+border:1px solid rgba(120,20,20,.4)!important;
 }
 
-/* GUNS */
-
-body::before{
-
-    content:"";
-
-    position:fixed;
-
-    bottom:0;
-
-    left:0;
-
-    width:320px;
-
-    height:320px;
-
-    background:url("https://fmont07.github.io/ao3skintest/gun.png");
-
-    background-size:contain;
-
-    background-repeat:no-repeat;
-
-    opacity:.10;
-
-    pointer-events:none;
-
+/* Preserve AO3 archive icons */
+.symbols,
+.required-tags .rating,
+.required-tags .warning{
+font-family:inherit;
 }
 
-body::after{
+/* ==========================================
+   FORCE LUCIDA BRIGHT EVERYWHERE
+========================================== */
 
-    content:"";
-
-    position:fixed;
-
-    top:120px;
-
-    right:0;
-
-    width:320px;
-
-    height:320px;
-
-    background:url("https://fmont07.github.io/ao3skintest/gun.png");
-
-    background-size:contain;
-
-    background-repeat:no-repeat;
-
-    transform:scaleX(-1);
-
-    opacity:.10;
-
-    pointer-events:none;
-
-}
-
-/* TABLES */
-
-table,
+body,
+#outer,
+#inner,
+#main,
+#dashboard,
+#workskin,
+#chapters,
+.userstuff,
+.userstuff p,
+.userstuff div,
+.userstuff span,
+.userstuff li,
+.userstuff td,
+.userstuff th,
+.userstuff blockquote,
+.userstuff dd,
+.userstuff dt,
+.preface,
+.preface *,
+.meta,
+.meta *,
+.summary,
+.notes,
+.end.notes,
+.chapter,
+.chapter *,
+.heading,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+li,
+dd,
+dt,
 td,
-th{
-
-    border-color:#640000;
-
-}
-
-/* INPUTS */
-
+th,
+blockquote,
+label,
+legend,
+button,
+input,
 textarea,
 select,
-input[type=text],
-input[type=password]{
+a {
 
-    background:#1c0000;
-
-    color:#ddd;
-
-    border:1px solid #700000;
-
-}
-
-/* SCROLLBAR */
-
-::-webkit-scrollbar{
-
-    width:12px;
-
-}
-
-::-webkit-scrollbar-track{
-
-    background:#140000;
-
-}
-
-::-webkit-scrollbar-thumb{
-
-    background:#700000;
-
-    border-radius:10px;
-
-}
-
-/* SELECTION */
-
-::selection{
-
-    background:#8f0000;
-
-    color:white;
-
-}
-
-/* GLOW */
-
-.blurb:hover,
-.work:hover,
-.comment:hover{
-
-    box-shadow:0 0 18px rgba(255,40,40,.35);
+    font-family: "Lucida Bright", Georgia, serif !important;
 
 }
