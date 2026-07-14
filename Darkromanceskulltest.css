@@ -1,0 +1,298 @@
+/*=========================================================
+ DARK ROMANCE AO3 SITE SKIN
+=========================================================*/
+
+body {
+    background:
+        linear-gradient(rgba(10,0,0,.85), rgba(0,0,0,.90)),
+        url("https://fmont07.github.io/ao3skintest/background.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #d4d4d4;
+    font-family: Georgia, serif;
+}
+
+/* HEADER */
+
+#header {
+    background: rgba(15,0,0,.92);
+    border-bottom: 3px solid #750000;
+    box-shadow: 0 0 30px #450000;
+}
+
+/* TOP ROSES */
+
+#header::before{
+    content:"";
+    display:block;
+    height:80px;
+    background:url("YOUR_ROSES_IMAGE");
+    background-repeat:repeat-x;
+    background-size:auto 80px;
+}
+
+/* FOOTER */
+
+#footer{
+    background:rgba(15,0,0,.92);
+    border-top:3px solid #750000;
+}
+
+#footer::after{
+    content:"";
+    display:block;
+    height:80px;
+    background:url("https://fmont07.github.io/ao3skintest/background.png");
+    background-repeat:repeat-x;
+    background-size:auto 80px;
+}
+
+/* MAIN BOXES */
+
+.wrapper,
+.region,
+fieldset,
+.work,
+.blurb,
+.bookmark,
+.comment,
+.preface,
+.userstuff,
+.meta,
+.dashboard,
+#main{
+
+    background:rgba(20,0,0,.72);
+
+    border:1px solid #640000;
+
+    border-radius:8px;
+
+    box-shadow:0 0 15px rgba(255,0,0,.15);
+}
+
+/* LINKS */
+
+a{
+
+    color:#d12626;
+
+}
+
+a:hover{
+
+    color:#ff5b5b;
+
+    text-shadow:0 0 6px red;
+
+}
+
+/* BUTTONS */
+
+input,
+button,
+.actions a{
+
+    background:#2b0000;
+
+    color:#ddd;
+
+    border:1px solid #850000;
+
+}
+
+input:hover,
+button:hover,
+.actions a:hover{
+
+    background:#6d0000;
+
+}
+
+/* TITLES */
+
+h1,h2,h3,h4{
+
+    color:#d22;
+
+    text-shadow:0 0 8px #600;
+
+}
+
+/* SKULLS */
+
+#main::before{
+
+    content:"";
+
+    position:fixed;
+
+    top:20px;
+
+    left:20px;
+
+    width:180px;
+
+    height:180px;
+
+    background:url("https://fmont07.github.io/ao3skintest/skull.png");
+
+    background-size:contain;
+
+    background-repeat:no-repeat;
+
+    opacity:.16;
+
+    pointer-events:none;
+
+}
+
+#main::after{
+
+    content:"";
+
+    position:fixed;
+
+    bottom:20px;
+
+    right:20px;
+
+    width:180px;
+
+    height:180px;
+
+    background:url("https://fmont07.github.io/ao3skintest/skull.png");
+
+    background-size:contain;
+
+    background-repeat:no-repeat;
+
+    opacity:.16;
+
+    pointer-events:none;
+
+}
+
+/* GUNS */
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    bottom:0;
+
+    left:0;
+
+    width:320px;
+
+    height:320px;
+
+    background:url("https://fmont07.github.io/ao3skintest/gun.png");
+
+    background-size:contain;
+
+    background-repeat:no-repeat;
+
+    opacity:.10;
+
+    pointer-events:none;
+
+}
+
+body::after{
+
+    content:"";
+
+    position:fixed;
+
+    top:120px;
+
+    right:0;
+
+    width:320px;
+
+    height:320px;
+
+    background:url("https://fmont07.github.io/ao3skintest/gun.png");
+
+    background-size:contain;
+
+    background-repeat:no-repeat;
+
+    transform:scaleX(-1);
+
+    opacity:.10;
+
+    pointer-events:none;
+
+}
+
+/* TABLES */
+
+table,
+td,
+th{
+
+    border-color:#640000;
+
+}
+
+/* INPUTS */
+
+textarea,
+select,
+input[type=text],
+input[type=password]{
+
+    background:#1c0000;
+
+    color:#ddd;
+
+    border:1px solid #700000;
+
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar{
+
+    width:12px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#140000;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#700000;
+
+    border-radius:10px;
+
+}
+
+/* SELECTION */
+
+::selection{
+
+    background:#8f0000;
+
+    color:white;
+
+}
+
+/* GLOW */
+
+.blurb:hover,
+.work:hover,
+.comment:hover{
+
+    box-shadow:0 0 18px rgba(255,40,40,.35);
+
+}
