@@ -1,36 +1,46 @@
-/* AO3 Dark Romance Skin
-Replace YOUR_GITHUB_BACKGROUND_URL with your GitHub image URL.
-*/
-
-html,body{
-background:#050505 url("https://fmont07.github.io/ao3skintest/background.png") top center fixed no-repeat;
-background-size:cover;
-color:#f0ece8;
-font-family:"Lucida Bright", Georgia, serif;
+html,
+body {
+  background: #050505 url("https://fmont07.github.io/ao3skintest/background.png") top center fixed no-repeat;
+  background-size: cover;
+  color: #f0ece8;
+  font-family: "Cormorant Garamond", Georgia, serif;
 }
 
-body,#outer,#inner,#main,#dashboard,#header,#footer{
-background-color:transparent;
+body,
+#outer,
+#inner,
+#main,
+#dashboard,
+#header,
+#footer {
+  background-color: transparent;
 }
 
-#header{
-background:rgba(5,5,5,.82);
-border-bottom:1px solid rgba(120,20,20,.35);
+#header {
+  background: rgba(5,5,5,.82);
+  border-bottom: 1px solid rgba(120,20,20,.35);
 }
 
-#header a,#greeting,#greeting a,.user,.user a{
-color:#f3f3f3!important;
-text-decoration:none;
+#header a,
+#greeting,
+#greeting a,
+.user,
+.user a {
+  color: #f3f3f3 !important;
+  text-decoration: none;
+  font-family: "Cormorant Garamond",Georgia,serif !important;
 }
 
-#header a:hover,#greeting a:hover,.user a:hover{
-color:#ff8f8f!important;
+#header a:hover,
+#greeting a:hover,
+.user a:hover {
+  color: #ff8f8f !important;
 }
 
-#main{
-background:rgba(5,5,5,.18);
-border:1px solid rgba(90,90,90,.22);
-padding:1em;
+#main {
+  background: rgba(5,5,5,.18);
+  border: 1px solid rgba(90,90,90,.22);
+  padding: 1em;
 }
 
 #dashboard,
@@ -48,113 +58,12 @@ fieldset,
 #workskin .preface,
 #workskin .chapter,
 #workskin .summary,
-#workskin .notes{
-background:rgba(5,5,5,.25)!important;
-border:1px solid rgba(95,95,95,.25)!important;
-box-shadow:0 0 10px rgba(0,0,0,.35);
+#workskin .notes {
+  background: rgba(5,5,5,.25) !important;
+  border: 1px solid rgba(95,95,95,.25) !important;
+  box-shadow: 0 0 10px rgba(0,0,0,.35);
 }
 
-p,li,dd,dt,td,th,blockquote,.userstuff{
-color:#f0ece8!important;
-line-height:1.75;
-}
-
-h1,h2,h3,h4,.heading,.title{
-font-family:"Lucida Bright",Georgia,serif;
-color:#d45b5b!important;
-font-weight:normal;
-}
-
-a,a:visited,.tag,.tags a,.required-tags a,.relationships a,.characters a,.freeforms a,.fandom a{
-color:#e07070!important;
-}
-
-a:hover{
-color:#ffaaaa!important;
-}
-
-.stats,.datetime,.language,.words,.chapters,.comments,.bookmarks,.hits,.kudos{
-color:#ddd!important;
-}
-
-button,
-input[type=submit],
-input[type=button],
-.actions a,
-.actions li a{
-background:rgba(45,0,0,.78)!important;
-color:#fff!important;
-border:1px solid rgba(120,20,20,.45)!important;
-}
-
-button:hover,
-input[type=submit]:hover,
-.actions a:hover{
-background:rgba(95,0,0,.88)!important;
-}
-
-input[type=text],
-input[type=search],
-textarea,
-select{
-background:rgba(20,20,20,.9)!important;
-color:#fff!important;
-border:1px solid rgba(90,90,90,.35)!important;
-}
-
-#dashboard,#dashboard *{
-color:#f2f2f2!important;
-}
-
-.notice,.flash,.error{
-background:rgba(45,0,0,.75)!important;
-color:#fff!important;
-border:1px solid rgba(120,20,20,.4)!important;
-}
-
-/* Preserve AO3 archive icons */
-.symbols,
-.required-tags .rating,
-.required-tags .warning{
-font-family:inherit;
-}
-
-/* ==========================================
-   FORCE LUCIDA BRIGHT EVERYWHERE
-========================================== */
-
-body,
-#outer,
-#inner,
-#main,
-#dashboard,
-#workskin,
-#chapters,
-.userstuff,
-.userstuff p,
-.userstuff div,
-.userstuff span,
-.userstuff li,
-.userstuff td,
-.userstuff th,
-.userstuff blockquote,
-.userstuff dd,
-.userstuff dt,
-.preface,
-.preface *,
-.meta,
-.meta *,
-.summary,
-.notes,
-.end.notes,
-.chapter,
-.chapter *,
-.heading,
-h1,
-h2,
-h3,
-h4,
-h5,
 p,
 li,
 dd,
@@ -162,14 +71,220 @@ dt,
 td,
 th,
 blockquote,
-label,
-legend,
+.userstuff,
+.userstuff p,
+.userstuff div,
+.userstuff span {
+  color: #f0ece8 !important;
+  font-family: "Cormorant Garamond",Georgia,serif !important;
+  line-height: 1.75;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.heading,
+.title,
+.work .heading,
+.preface .title,
+#workskin .title {
+  font-family: "Cinzel","Times New Roman",serif !important;
+  color: #d45b5b !important;
+  font-weight: 500;
+  letter-spacing: .08em;
+}
+
+a,
+a:visited,
+.tag,
+.tags a,
+.required-tags a,
+.relationships a,
+.characters a,
+.freeforms a,
+.fandom a {
+  color: #e07070 !important;
+}
+
+a:hover {
+  color: #ffaaaa !important;
+}
+
+.tags,
+.tags a,
+.tag,
+.required-tags a,
+.relationships a,
+.characters a,
+.freeforms a,
+.fandom a {
+  font-family: "Cinzel",Georgia,serif !important;
+  letter-spacing: .05em;
+}
+
+.stats,
+.datetime,
+.language,
+.words,
+.chapters,
+.comments,
+.bookmarks,
+.hits,
+.kudos {
+  color: #ddd !important;
+  font-family: "Cormorant Garamond",Georgia,serif !important;
+}
+
 button,
-input,
+input[type=submit],
+input[type=button],
+.actions a,
+.actions li a {
+  background: rgba(45,0,0,.78) !important;
+  color: #fff !important;
+  border: 1px solid rgba(120,20,20,.45) !important;
+  font-family: "Cinzel",Georgia,serif !important;
+  letter-spacing: .08em;
+}
+
+.work,
+.blurb,
+.bookmark,
+.comment,
+.module,
+.group,
+.listbox,
+.dashboard .module,
+#dashboard .module,
+.preface,
+.meta,
+.filters,
+fieldset,
+#workskin .preface,
+#workskin .chapter,
+#workskin .summary,
+#workskin .notes {
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.work,
+.blurb {
+  border-left: 3px solid rgba(140,20,20,.75) !important;
+}
+
+.work:hover,
+.blurb:hover {
+  border-left-color: #d45b5b !important;
+}
+
+button:hover,
+input[type=submit]:hover,
+.actions a:hover {
+  background: rgba(95,0,0,.88) !important;
+}
+
+input[type=text],
+input[type=search],
 textarea,
-select,
-a {
+select {
+  background: rgba(20,20,20,.9) !important;
+  color: #fff !important;
+  border: 1px solid rgba(90,90,90,.35) !important;
+  font-family: "Cormorant Garamond",Georgia,serif !important;
+}
 
-    font-family: "Lucida Bright", Georgia, serif !important;
+#dashboard,
+#dashboard * {
+  color: #f2f2f2 !important;
+  font-family: "Cormorant Garamond",Georgia,serif !important;
+}
 
+.notice,
+.flash,
+.error {
+  background: rgba(45,0,0,.75) !important;
+  color: #fff !important;
+  border: 1px solid rgba(120,20,20,.4) !important;
+}
+
+#workskin .userstuff {
+  font-family: "Cormorant Garamond",Georgia,serif !important;
+  font-size: 1.15em;
+  line-height: 1.9;
+}
+
+#workskin .userstuff p {
+  margin-bottom: 1.2em;
+}
+
+body *,
+#outer *,
+#inner *,
+#main *,
+#workskin *,
+#chapters *,
+.preface *,
+.meta * {
+  font-family: "Cormorant Garamond",Georgia,serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.heading,
+.title,
+.tags a,
+.tag,
+button,
+input[type=submit],
+.actions a {
+  font-family: "Cinzel","Times New Roman",serif !important;
+}
+
+.symbols,
+.required-tags .rating,
+.required-tags .warning {
+  font-family: inherit !important;
+}
+
+#header,
+#header .primary,
+#header .secondary,
+#header .navigation,
+#header .menu,
+#header ul,
+#header li {
+  background: transparent !important;
+  border-color: transparent !important;
+}
+
+#header a,
+#header .menu a {
+  color: #f3f3f3 !important;
+}
+
+#header a:hover,
+#header .menu a:hover {
+  color: #ff8f8f !important;
+}
+
+#header,
+#header .primary,
+#header .secondary,
+#header .navigation,
+#header .menu,
+#header ul,
+#header li {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+#header:after,
+#header:before {
+  display: none !important;
 }
